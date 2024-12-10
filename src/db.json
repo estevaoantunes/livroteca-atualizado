@@ -1,0 +1,57 @@
+{
+  "livros": [
+    {
+      "titulo": "Romanceiro da Inconfidencia",
+      "sinopse": "O \"Romanceiro da Inconfidência\" foi lançado em 1953. Esse é um dos principais livros do escritor brasileiro Carlos Drummond de Andrade. A obra aborda a Inconfidência Mineira, um movimento de caráter separatista e republicano que aconteceu no Brasil no século XVIII, e é composta por poemas que exploram tanto os aspectos históricos quanto os emocionais desse episódio marcante da história brasileira.",
+      "genero": "Romance",
+      "autor": "Carlos Drummond de Andrade",
+      "ano": "1953-01-09",
+      "capa": "https://s1.static.brasilescola.uol.com.br/be/2022/04/capa-do-livro-romanceiro-da-inconfidencia.jpg",
+      "id": "1"
+    }
+  ],
+  "postagens_independentes": [
+    {
+      "id": 1,
+      "titulo": "Um teste de vida",
+      "genero": "Romance",
+      "autor": "James Bryan",
+      "sinopse": "",
+      "texto": "",
+      "capa": ""
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "int",
+      "nome": "string",
+      "foto_perfil": "string (URL da imagem)",
+      "login": "string",
+      "senha": "string",
+      "email": "string",
+      "telefone": "string",
+      "recuperacao_senha": {
+        "pergunta_secreta": "string",
+        "resposta_secreta": "string"
+      }
+    }
+  ],
+  "resenhas": [
+    {
+      "id": "int",
+      "id_livro": "int",
+      "titulo": "string",
+      "descricao": "string",
+      "data_postagem": "date"
+    }
+  ],
+  "comentarios": [
+    {
+      "id": "int",
+      "id_livro": "int",
+      "id_usuario": "int",
+      "opiniao": "string",
+      "data_postagem": "date"
+    }
+  ]
+}

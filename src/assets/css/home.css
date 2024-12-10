@@ -1,0 +1,489 @@
+/*Fonte do titulo no Parallax*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/*Fonte padrão do site comfortaa*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    background: #131313;
+    scroll-behavior: smooth;
+}
+
+main {
+    background-color: #131313;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*HEADER*/
+
+header {
+    background-color: #fafafa;
+    color: #525252;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    background: #000000;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Bebas Neue", sans-serif;
+}
+#livro {
+    color: white;
+}
+#teca {
+    color: rgba(104, 33, 104);
+}
+
+.menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    gap: 20px; /* Espaçamento entre a registrar e a imagem */
+}
+
+.registrar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px; /* Espaçamento entre o texto e o botão */
+    margin-left: 800px;
+}
+
+#frase-registrar {
+    margin: 0; /* Remove margens extras */
+    line-height: normal;
+    color: white;
+    font-size: 18px;
+}
+
+#btn-registrar {
+    display: inline-block;  
+    padding: 5px 10px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    background-color: rgba(104, 33, 104);  
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
+}
+
+#btn-registrar:hover {
+    color: white;
+    transform: translateY(-5px); 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.usuario-profile {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.sub-menu-caixa {
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    z-index: 10;
+}
+
+.sub-menu-caixa.open-menu {
+    max-height: 400px;
+}
+
+.sub-menu {
+    background: #1a1a1a;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info h2 {
+    font-weight: 500;
+    color: #fff;
+}
+
+.user-info img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p {
+    width: 100%;
+    color: #fff;
+}
+
+.sub-menu-link img {
+    width: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link span {
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+
+
+
+/*PARALLAX*/
+
+#parallax {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    background-attachment: fixed;
+    background-image: url(/src/assets/imgs/home/livro-aberto-principal.png);
+    border-radius: 300px;
+}
+
+
+
+.titulo-boasvindas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    margin: 0 0 10px;
+    font-size: 45px;
+    font-weight: 400;
+    font-family: "Bebas Neue", serif;
+    overflow-wrap: break-word
+}
+
+#cor-livroteca {
+    color: rgb(104, 33, 104);
+    font-size: 45px;
+    font-weight: 400;
+    font-family: "Bebas Neue", serif;
+}
+
+/*PARALLAX BOTÃO*/
+
+
+
+/*CARDS POPULARES*/
+
+#titulo-recomendacoes {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+:root {
+
+    --first-color: hsl(295, 86%, 20%);
+    --title-color: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 35%);
+    --body-color: hsl(0, 0%, 95%);
+    --container-color: hsl(0, 0%, 100%);
+
+
+    --body-font: "Poppins", sans-serif;
+    --h2-font-size: 1.25rem;
+    --small-font-size: .813rem;
+}
+
+
+#recomendacoes-populares {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 0;
+}
+
+.card__container {
+    display: grid;
+    row-gap: 3.5rem;
+}
+
+.card__article {
+    position: relative;
+    overflow: hidden;
+}
+
+.card__img_principal {
+    width: 328px;
+    height: 500px;
+    border-radius: 1.5rem;
+}
+
+.card__data {
+    width: 280px;
+    background-color: var(--container-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card__description {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: .25rem;
+}
+
+.card__title {
+    font-size: var(--h2-font-size);
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: .75rem;
+}
+
+.card__button {
+    text-decoration: none;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    color: var(--first-color);
+}
+
+.card__button:hover {
+    text-decoration: underline;
+}
+
+
+.card__article:hover .card__data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card__article:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+    animation: remove-data 1s forwards;
+}
+
+/*CARDS AVENTURA*/
+#recomendacoes-aventura{
+    margin-bottom: 30px;
+    
+}
+
+div.col{
+   padding: 0px;
+}
+
+#imagem-cards{
+    width: 180px;
+    height: 229px;
+}
+
+#imagem-cards:hover{
+    border: 4px solid rgb(108, 22, 165);
+    cursor: pointer;
+    
+}
+
+/*VARIÁVEIS*/
+
+@keyframes show-data {
+    50% {
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+
+    50% {
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+
+    50% {
+        overflow: hidden;
+    }
+}
+
+
+
+/*BREAKPOINTS PARALLAX*/
+
+@media screen and (max-width: 768px) {
+    #parallax {
+        margin-left: 20px;
+        margin-right: 20px;
+        min-height: 600px;
+        background-attachment: scroll;
+    }
+
+    .titulo-boasvindas {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #parallax {
+        margin: 0 10px;
+        min-height: 400px;
+    }
+
+    .titulo-boasvindas {
+        font-size: 28px;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
+
+/*BREAKPOINTS PARA OS CARDS*/
+
+@media screen and (min-width: 1120px) {
+    :root {
+        --h2-font-size: 1.5rem;
+        --small-font-size: .875rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .container {
+        margin-inline: 1rem;
+    }
+
+    .card__data {
+        width: 250px;
+        padding: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .card__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+}
+
+
+@media screen and (min-width: 1120px) {
+    .container {
+        height: 100vh;
+    }
+
+    .card__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card__img {
+        width: 348px;
+    }
+
+    .card__data {
+        width: 316px;
+        padding-inline: 2.5rem;
+    }
+}

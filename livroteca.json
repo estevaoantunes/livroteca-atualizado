@@ -1,0 +1,49 @@
+//estruturas de dados utilizadas no projeto
+{
+    "livro": {
+        "id": "int",
+        "titulo": "string",
+        "autor": "string",
+        "genero": "string[]",
+        "data_lancamento": "date",
+        "capa": "string (URL)",
+        "sinope": "string",
+        "texto": "string"
+    },
+    "postagem_independente": {
+        "id": "int",
+        "titulo": "string",
+        "genero": "string[]",
+        "autor": "string",
+        "sinopse": "string",
+        "texto": "string",
+        "capa": "string"
+    },
+    "usuario": {
+        "id": "int",
+        "nome": "string",
+        "foto_perfil": "string (URL da imagem)",
+        "login": "string",
+        "senha": "string",
+        "email": "string",
+        "telefone": "string",
+        "recuperacao_senha": {
+            "pergunta_secreta": "string",
+            "resposta_secreta": "string"
+        }
+    },
+    "resenha": {
+        "id": "int",
+        "id_livro": "int",
+        "titulo": "string",
+        "descricao": "string",
+        "data_postagem": "date"
+    },
+    "comentario": {
+        "id": "int",
+        "id_livro": "int",
+        "id_usuario": "int",
+        "opiniao": "string",
+        "data_postagem": "date"
+    }
+}

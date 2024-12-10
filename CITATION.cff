@@ -1,0 +1,32 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: LivroTeca
+authors:
+  - family-names: Antunes Lessa de Sousa Oliveira
+    given-names: Estevão 
+  - family-names: de Castro 
+    given-names: Gabriel Lucas
+  - family-names: Diniz Mendes
+    given-names: Luana
+  - family-names: Nunes de Moura
+    given-names: Julia
+  - family-names: Rodrigues Soares Santos
+    given-names: Raphael
+  - family-names: Gustavo de Freitas Morais
+    given-names: Welberthy
+
+  - name-suffix: Professor Maciel, W. D.
+    affiliation: PUC Minas
+    family-names: Dias Maciel
+    given-names: Wesley
+
+    keywords:
+    - Educação
+    - Literatura
+    - Cultura
+    - Web
+    - JSON-Server
+repository-code: 
+license: CC-BY-4.0
+version: 1.0.0
+date-released:

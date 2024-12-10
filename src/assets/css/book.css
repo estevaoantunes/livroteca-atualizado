@@ -1,0 +1,132 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin: 8vh 0px;
+}
+
+.card-form{
+    margin: 5vh 0px;
+}
+
+.form-group textarea{
+    resize: none;
+    min-height: 15vh;
+    max-height: 15vh;
+}
+
+.custom-file-upload {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(104, 33, 104);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.custom-file-upload:hover {
+    background-color: rgb(104, 33, 104);
+}
+
+.custom-file-upload i {
+    margin-right: 8px;
+}
+
+#image {
+    display: none;
+}
+
+.preview img {
+    max-width: 100px;
+    min-height: 150px;
+    margin-left: 20px;
+    border-radius: 5px;
+    margin: 0px 20px;
+}
+
+.books {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.book-list h2 {
+    margin: 10vh 0px;
+}
+
+
+.books {
+    margin: 2vh;
+    position: relative;
+}
+
+.book-item img {
+    margin: 2vh;
+    width: 20vh;
+    position: relative;
+}
+
+.book-item {
+    margin: 2vh;
+    width: 20vh;
+    position: relative;
+    display: inline-block;
+}
+
+.edit-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgb(104, 33, 104);
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 0px;
+    font-size: 20px;
+    width: 5vh;
+    height: 5vh;
+}
+
+#book-form div button{
+    margin: 5vh 0px;
+    background-color: rgb(104, 33, 104);
+}
+
+#book-form div button:hover{
+    background-color: rgb(143, 44, 143);
+}
+
+.card{
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.book-form{
+    min-width: 45%;
+}
